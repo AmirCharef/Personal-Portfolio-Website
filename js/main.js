@@ -361,7 +361,7 @@ document.addEventListener("DOMContentLoaded", function () {
         openPopup();
         // Set the specific site URL for the first button
         visitSiteButton3.addEventListener("click", function () {
-            window.open("");
+            window.open("https://www.figma.com/design/TwWqSjoEymwFXftarF33nR/GL-Project-Ui?node-id=0-1&t=9WKME55q3OXNOn6m-1");
         });
     });
 
