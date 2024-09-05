@@ -345,6 +345,37 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const noteButton3 = document.getElementById("project-03");
+    const popup3 = document.getElementById("popup-3");
+    const visitSiteButton3 = document.getElementById("visit-site-button-3");
+    const closePopupButton3 = document.getElementById("close-popup-button-3");
+
+    function openPopup() {
+        popup3.style.display = "block";
+    }
+
+    noteButton3.addEventListener("click", function (event) {
+        event.preventDefault();
+        openPopup();
+        // Set the specific site URL for the first button
+        visitSiteButton3.addEventListener("click", function () {
+            window.open("");
+        });
+    });
+
+    closePopupButton3.addEventListener("click", function () {
+        popup3.style.display = "none";
+    });
+
+    popup3.addEventListener("click", function (event) {
+        if (event.target === popup3) {
+            popup3.style.display = "none";
+        }
+    });
+});
+
 // Cursor 
 const cursorDot = document.querySelector("[data-cursor-dot]")
 const cursorOutline = document.querySelector("[data-cursor-outline]")
